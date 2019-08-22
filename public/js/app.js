@@ -36462,7 +36462,7 @@ var Popper = function () {
 
 
   createClass(Popper, [{
-    key: 'update',
+    key: 'update.blade.php',
     value: function update$$1() {
       return update.call(this);
     }
@@ -42969,7 +42969,7 @@ function registerRef (vnode, isRemoval) {
 
 var emptyNode = new VNode('', {}, []);
 
-var hooks = ['create', 'activate', 'update', 'remove', 'destroy'];
+var hooks = ['create', 'activate', 'update.blade.php', 'remove', 'destroy'];
 
 function sameVnode (a, b) {
   return (
@@ -43763,7 +43763,7 @@ function _update (oldVnode, vnode) {
       // existing directive, update
       dir.oldValue = oldDir.value;
       dir.oldArg = oldDir.arg;
-      callHook$1(dir, 'update', vnode, oldVnode);
+      callHook$1(dir, 'update.blade.php', vnode, oldVnode);
       if (dir.def && dir.def.componentUpdated) {
         dirsWithPostpatch.push(dir);
       }
